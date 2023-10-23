@@ -79,6 +79,7 @@ public class TestClassComman {
 				signInPage.clickonAccountAndListHeader();
 				String userName=UtilityClass.getDataFromExcelSheet("C:\\Users\\Admin\\eclipse-workspace\\AmazonMaven1\\src\\test\\resources\\DataResources\\xlcode.xlsx", "Sheet1", 1, 0);
 				signInPage.clickonMobilenoOrEmailId(userName);
+				System.out.println(userName);
 				signInPage.clickonCountinueButton() ;
 				
 				String password=UtilityClass.getDataFromExcelSheet("C:\\Users\\Admin\\eclipse-workspace\\AmazonMaven1\\src\\test\\resources\\DataResources\\xlcode.xlsx", "Sheet1", 1, 1);
